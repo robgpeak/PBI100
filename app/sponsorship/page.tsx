@@ -1,3 +1,5 @@
+import SponsorshipForm from '../../components/SponsorshipForm';
+
 export const metadata = {
   title: 'Sponsorship | Palm Beach Influence 100',
   description:
@@ -63,51 +65,7 @@ export default function SponsorshipPage() {
           <aside className="space-y-6">
             <div className="rounded-[2rem] border border-slate-200 bg-white/90 p-10 shadow-elegant">
               <h2 className="text-2xl font-semibold text-[#0f1b2d]">Sponsorship inquiry</h2>
-              <form className="mt-8 space-y-4">
-                <label className="block text-sm font-medium text-slate-700">
-                  Name
-                  <input type="text" className="mt-3 w-full rounded-3xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20" />
-                </label>
-                <label className="block text-sm font-medium text-slate-700">
-                  Company
-                  <input type="text" className="mt-3 w-full rounded-3xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20" />
-                </label>
-                <label className="block text-sm font-medium text-slate-700">
-                  Email
-                  <input type="email" className="mt-3 w-full rounded-3xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20" />
-                </label>
-                <label className="block text-sm font-medium text-slate-700">
-                  Phone
-                  <input type="tel" className="mt-3 w-full rounded-3xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20" />
-                </label>
-                <label className="block text-sm font-medium text-slate-700">
-                  Sponsorship interest
-                  <select className="mt-3 w-full rounded-3xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20">
-                    <option value="">Select an opportunity</option>
-                    {opportunities.map((item) => (
-                      <option key={item} value={item}>
-                        {item}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <label className="block text-sm font-medium text-slate-700">
-                  Budget range
-                  <select className="mt-3 w-full rounded-3xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20">
-                    <option value="">Select range</option>
-                    <option>$25k–$50k</option>
-                    <option>$50k–$100k</option>
-                    <option>$100k+</option>
-                  </select>
-                </label>
-                <label className="block text-sm font-medium text-slate-700">
-                  Message
-                  <textarea rows={4} className="mt-3 w-full rounded-[1.25rem] border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 outline-none focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20"></textarea>
-                </label>
-                <button type="button" className="inline-flex w-full items-center justify-center rounded-full bg-[#0f1b2d] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#10203a]">
-                  Request Sponsorship Information
-                </button>
-              </form>
+              <SponsorshipForm opportunities={opportunities} />
             </div>
           </aside>
         </div>

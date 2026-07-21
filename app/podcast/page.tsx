@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import PodcastGuestForm from '../../components/PodcastGuestForm';
+
 export const metadata = {
   title: 'Podcast | The Palm Beach Influence Podcast',
   description:
@@ -113,31 +115,7 @@ export default function PodcastPage() {
             <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-10">
               <h2 className="text-2xl font-semibold text-[#0f1b2d]">Suggest a guest</h2>
               <p className="mt-4 leading-7 text-slate-700">Recommend a leader, executive, founder, or representative for future podcast conversations.</p>
-              <form className="mt-8 space-y-4">
-                <label className="block text-sm font-medium text-slate-700">
-                  Your name
-                  <input type="text" className="mt-3 w-full rounded-3xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20" />
-                </label>
-                <label className="block text-sm font-medium text-slate-700">
-                  Email
-                  <input type="email" className="mt-3 w-full rounded-3xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20" />
-                </label>
-                <label className="block text-sm font-medium text-slate-700">
-                  Suggested guest name
-                  <input type="text" className="mt-3 w-full rounded-3xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20" />
-                </label>
-                <label className="block text-sm font-medium text-slate-700">
-                  Organization
-                  <input type="text" className="mt-3 w-full rounded-3xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20" />
-                </label>
-                <label className="block text-sm font-medium text-slate-700">
-                  Why this guest matters
-                  <textarea rows={4} className="mt-3 w-full rounded-[1.25rem] border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20"></textarea>
-                </label>
-                <button type="button" className="inline-flex w-full items-center justify-center rounded-full bg-[#0f1b2d] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#10203a]">
-                  Submit Suggestion
-                </button>
-              </form>
+              <PodcastGuestForm />
             </div>
             <div className="rounded-[2rem] border border-slate-200 bg-[#0f1b2d] p-10 text-white">
               <h3 className="text-xl font-semibold">Sponsor the podcast</h3>
