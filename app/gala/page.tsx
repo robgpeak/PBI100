@@ -95,7 +95,7 @@ export default function GalaPage() {
               </p>
               <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
                 <Link
-                  href="/contact"
+                  href="/contact?inquiry=gala"
                   className="inline-flex items-center justify-center rounded-full bg-[#d4b27b] px-8 py-4 text-sm font-semibold text-[#0f1b2d] shadow-elegant transition hover:bg-[#bea568]"
                 >
                   Inquire for Tickets
@@ -210,7 +210,7 @@ export default function GalaPage() {
                   {option.description}
                 </p>
                 <Link
-                  href="/contact"
+                  href="/contact?inquiry=gala"
                   className="mt-8 inline-flex items-center justify-center rounded-full border border-[#d4b27b]/50 px-6 py-3 text-sm font-semibold text-[#d4b27b] transition hover:bg-[#d4b27b] hover:text-[#0f1b2d]"
                 >
                   Inquire
@@ -241,7 +241,7 @@ export default function GalaPage() {
             announcement goes public.
           </p>
           <Link
-            href="/contact"
+            href="/contact?inquiry=gala"
             className="mt-10 inline-flex items-center justify-center rounded-full bg-[#d4b27b] px-10 py-4 text-sm font-semibold text-[#0f1b2d] shadow-elegant transition hover:bg-[#bea568]"
           >
             Inquire for Tickets

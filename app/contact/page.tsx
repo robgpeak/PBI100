@@ -1,17 +1,11 @@
+import ContactForm from '../../components/ContactForm';
+import { inquiries } from './inquiries';
+
 export const metadata = {
   title: 'Contact | Palm Beach Influence 100',
   description:
-    'Contact Palm Beach Influence 100 for general inquiries, nominations, podcast suggestions, sponsorship, press, and partnerships.',
+    'Contact Palm Beach Influence 100 for gala tickets, general inquiries, nominations, podcast suggestions, sponsorship, press, and partnerships.',
 };
-
-const inquiries = [
-  { title: 'General inquiry', description: 'Questions about the platform, editorial focus, or updates.' },
-  { title: 'Nomination question', description: 'Assistance with the nomination process and eligibility.' },
-  { title: 'Podcast guest suggestion', description: 'Recommend a guest for The Palm Beach Influence Podcast.' },
-  { title: 'Sponsorship inquiry', description: 'Discuss sponsorship, events, or partnership opportunities.' },
-  { title: 'Press / media', description: 'Media inquiries and content partnership requests.' },
-  { title: 'Partnership', description: 'Explore strategic platform and event collaboration.' },
-];
 
 export default function ContactPage() {
   return (
@@ -40,46 +34,9 @@ export default function ContactPage() {
       <section className="mx-auto max-w-6xl px-6 py-16 lg:px-8 xl:px-12">
         <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div className="space-y-8">
-            <div className="rounded-[2rem] border border-slate-200 bg-white/90 p-10 shadow-elegant">
-              <h2 className="text-2xl font-semibold text-[#0f1b2d]">Contact form</h2>
-              <form className="mt-8 space-y-4">
-                <div className="grid gap-6 lg:grid-cols-2">
-                  <label className="space-y-3 text-sm text-slate-700">
-                    Name
-                    <input type="text" className="w-full rounded-3xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20" />
-                  </label>
-                  <label className="space-y-3 text-sm text-slate-700">
-                    Email
-                    <input type="email" className="w-full rounded-3xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20" />
-                  </label>
-                </div>
-                <div className="grid gap-6 lg:grid-cols-2">
-                  <label className="space-y-3 text-sm text-slate-700">
-                    Phone
-                    <input type="tel" className="w-full rounded-3xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20" />
-                  </label>
-                  <label className="space-y-3 text-sm text-slate-700">
-                    Inquiry type
-                    <select className="w-full rounded-3xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20">
-                      <option value="">Select inquiry</option>
-                      {inquiries.map((item) => (
-                        <option key={item.title} value={item.title}>
-                          {item.title}
-                        </option>
-                      ))}
-                    </select>
-                  </label>
-                </div>
-                <label className="block text-sm font-medium text-slate-700">
-                  Message
-                  <textarea rows={5} className="mt-3 w-full rounded-[1.25rem] border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 outline-none focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20"></textarea>
-                </label>
-                <button type="button" className="inline-flex w-full items-center justify-center rounded-full bg-[#0f1b2d] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#10203a]">
-                  Send inquiry
-                </button>
-              </form>
-            </div>
+            <ContactForm />
           </div>
+
 
           <aside className="space-y-6">
             <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-10">
