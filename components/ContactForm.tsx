@@ -2,11 +2,8 @@
 
 import { useEffect, useState, type FormEvent } from 'react';
 import { GALA_INQUIRY, inquiries } from '../app/contact/inquiries';
+import { INQUIRY_ACCESS_KEY, submitToWeb3Forms } from '../lib/web3forms';
 
-// Web3Forms access keys are public by design: they are safe to ship in client
-// code because a key only ever delivers to the address it was registered to.
-const WEB3FORMS_ACCESS_KEY = 'b1f43de9-ed7e-4d9a-bda3-5b13dd7414ef';
-const WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit';
 const FALLBACK_EMAIL = 'inquiry@pbi100.com';
 
 const fieldClass =
@@ -34,27 +31,20 @@ export default function ContactForm() {
 
     const formData = new FormData(event.currentTarget);
     const selectedType = String(formData.get('Inquiry type') || 'General inquiry');
-    formData.append('access_key', WEB3FORMS_ACCESS_KEY);
-    formData.append('subject', `PBI 100 inquiry — ${selectedType}`);
-    formData.append('from_name', 'Palm Beach Influence 100 website');
 
-    try {
-      const response = await fetch(WEB3FORMS_ENDPOINT, {
-        method: 'POST',
-        body: formData,
-      });
-      const result = await response.json();
+    const result = await submitToWeb3Forms({
+      formData,
+      accessKey: INQUIRY_ACCESS_KEY,
+      subject: `PBI 100 inquiry — ${selectedType}`,
+      replyTo: String(formData.get('Email') || ''),
+    });
 
-      if (response.ok && result.success) {
-        setStatus('success');
-        return;
-      }
-      setStatus('error');
-      setErrorMessage(result.message || 'The message could not be sent.');
-    } catch {
-      setStatus('error');
-      setErrorMessage('We could not reach the network. Please check your connection.');
+    if (result.ok) {
+      setStatus('success');
+      return;
     }
+    setStatus('error');
+    setErrorMessage(result.message);
   }
 
   if (status === 'success') {
