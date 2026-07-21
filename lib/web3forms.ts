@@ -9,6 +9,9 @@ export const INQUIRY_ACCESS_KEY = 'b1f43de9-ed7e-4d9a-bda3-5b13dd7414ef';
 /** Registered to nominations@pbi100.com. */
 export const NOMINATIONS_ACCESS_KEY = '5a67cfa1-bc21-46a8-b95a-a0d9558684fb';
 
+/** Registered to subscribe@pbi100.com. */
+export const SUBSCRIBE_ACCESS_KEY = '61b6a01b-9272-4d88-b5f8-277fef8d8e6c';
+
 /**
  * Access keys are public by design — a key only ever delivers to the address it
  * was registered to, so shipping one in client code grants no useful power to

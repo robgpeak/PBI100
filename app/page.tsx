@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import NewsletterForm from '../components/NewsletterForm';
 
 const categoryPillars = [
   'Commerce',
@@ -175,15 +176,7 @@ export default function HomePage() {
               <p className="text-sm uppercase tracking-[0.35em] text-[#d4b27b]">Updates</p>
               <h2 className="mt-4 text-3xl font-semibold">Subscribe for announcements</h2>
               <p className="mt-4 leading-7 text-slate-200">Receive email updates on nomination deadlines, podcast releases, annual recognition, and private events.</p>
-              <form className="mt-8 space-y-4">
-                <label className="block text-sm font-medium text-slate-200">
-                  Email address
-                  <input type="email" placeholder="you@example.com" className="mt-3 w-full rounded-3xl border border-white/15 bg-slate-950/90 px-4 py-3 text-sm text-white outline-none transition focus:border-[#d4b27b] focus:ring-2 focus:ring-[#d4b27b]/20" />
-                </label>
-                <button type="button" className="inline-flex w-full items-center justify-center rounded-full bg-[#d4b27b] px-6 py-3 text-sm font-semibold text-[#0f1b2d] transition hover:bg-[#bea568]">
-                  Join the List
-                </button>
-              </form>
+              <NewsletterForm />
             </div>
           </div>
         </div>
