@@ -69,7 +69,9 @@ export default function GalaPage() {
           backgroundImage:
             "linear-gradient(rgba(7,12,22,0.82), rgba(7,12,22,0.92)), url('/black-tie.jpeg')",
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          // Anchored high in the frame so the guests' heads stay in view rather
+          // than being cropped off by the top edge of the section.
+          backgroundPosition: 'center 12%',
         }}
       >
         <div className="mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:px-8 lg:py-32 xl:px-12">
@@ -114,10 +116,10 @@ export default function GalaPage() {
               <div className="overflow-hidden rounded-[2rem] border border-[#b8945f]/40 shadow-elegant">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/black-tie.jpeg"
-                  alt="Guests in black tie arriving at a Palm Beach Influence 100 evening"
-                  width={1140}
-                  height={862}
+                  src="/pbi100-black-tie-venue.jpg"
+                  alt="Guests in black tie in a chandeliered ballroom beneath the Palm Beach Influence 100 stage banner"
+                  width={1400}
+                  height={763}
                   className="h-full w-full object-cover"
                 />
               </div>
