@@ -32,7 +32,11 @@ jobs:
       - name: Build static site
         run: npm run build
 
+      # `enablement` turns Pages on (with the Actions source) if it is not
+      # already configured, so the first deploy does not require a manual step.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
