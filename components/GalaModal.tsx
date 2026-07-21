@@ -108,7 +108,7 @@ export default function GalaModal() {
 
         <div className="overflow-y-auto px-7 pb-9 pt-1 text-center sm:px-12 sm:pb-12">
           <p className="text-[0.6rem] uppercase tracking-[0.4em] text-[#d4b27b] sm:text-xs">
-            Black Tie &middot; September 2026
+            Black Tie &middot; November 2026
           </p>
 
           <h2

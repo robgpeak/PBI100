@@ -3,7 +3,7 @@ import Link from 'next/link';
 export const metadata = {
   title: 'The Gala | Palm Beach Influence 100',
   description:
-    'September 2026. Black tie. One night honoring the 100 businesses and business leaders shaping Palm Beach County. Inquire for tickets.',
+    'November 2026. Black tie. One night honoring the 100 businesses and business leaders shaping Palm Beach County. Inquire for tickets.',
 };
 
 const evening = [
@@ -78,7 +78,7 @@ export default function GalaPage() {
           <div className="grid items-center gap-12 lg:grid-cols-[1.15fr_1fr] lg:gap-16">
             <div>
               <p className="text-[0.65rem] uppercase tracking-[0.4em] text-[#d4b27b] sm:text-xs">
-                Black Tie &middot; September 2026 &middot; Palm Beach County
+                Black Tie &middot; November 2026 &middot; Palm Beach County
               </p>
               <h1 className="mt-6 font-serif text-4xl font-semibold leading-[1.1] text-white sm:text-5xl lg:text-6xl">
                 One night. One hundred. One room.
@@ -233,7 +233,7 @@ export default function GalaPage() {
         <div className="mx-auto max-w-4xl px-6 py-20 text-center lg:py-24">
           <div className="mx-auto mb-8 h-px w-24 bg-gradient-to-r from-transparent via-[#d4b27b] to-transparent" />
           <h2 className="font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
-            September 2026. The invitation is open — briefly.
+            November 2026. The invitation is open — briefly.
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">
             Date and venue are released to the inquiry list first, and seats are confirmed in
