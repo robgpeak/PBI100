@@ -1,4 +1,5 @@
 import Footer from './Footer';
+import GalaModal from './GalaModal';
 import Navbar from './Navbar';
 
 export default function PageShell({ children }: { children: React.ReactNode }) {
@@ -7,6 +8,7 @@ export default function PageShell({ children }: { children: React.ReactNode }) {
       <Navbar />
       <div>{children}</div>
       <Footer />
+      <GalaModal />
     </div>
   );
 }

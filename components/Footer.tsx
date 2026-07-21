@@ -4,6 +4,7 @@ import Logo from './Logo';
 const footerLinks = [
   { href: '/about', label: 'About' },
   { href: '/the-list', label: 'The List' },
+  { href: '/gala', label: 'Gala' },
   { href: '/podcast', label: 'Podcast' },
   { href: '/nominate', label: 'Nominate' },
   { href: '/sponsorship', label: 'Sponsorship' },
