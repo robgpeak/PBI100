@@ -5,7 +5,7 @@ import PodcastGuestForm from '../../components/PodcastGuestForm';
 export const metadata = {
   title: 'Podcast | The Palm Beach Influence Podcast',
   description:
-    'Discover featured episodes from The Palm Beach Influence Podcast, where business leaders and institution representatives discuss influence, growth, and Palm Beach strategy.',
+    'Discover featured episodes from The Palm Beach Influence Podcast, where business leaders and institution representatives discuss influence, growth, and Palm Beach County strategy.',
 };
 
 const episodes = [
@@ -84,7 +84,7 @@ export default function PodcastPage() {
                 </div>
                 <div className="rounded-[1.75rem] border border-slate-200 bg-slate-950 p-8 text-white">
                   <p className="text-sm uppercase tracking-[0.35em] text-[#d4b27b]">Podcast focus</p>
-                  <p className="mt-4 leading-7 text-slate-200">The podcast highlights interviews with leaders who shape Palm Beach business, capital, culture, and community through their organizations.</p>
+                  <p className="mt-4 leading-7 text-slate-200">The podcast highlights interviews with leaders who shape Palm Beach County business, capital, culture, and community through their organizations.</p>
                 </div>
               </div>
             </div>
@@ -119,7 +119,7 @@ export default function PodcastPage() {
             </div>
             <div className="rounded-[2rem] border border-slate-200 bg-[#0f1b2d] p-10 text-white">
               <h3 className="text-xl font-semibold">Sponsor the podcast</h3>
-              <p className="mt-4 leading-7 text-slate-200">Align your brand with thoughtful conversations that reach the Palm Beach business community.</p>
+              <p className="mt-4 leading-7 text-slate-200">Align your brand with thoughtful conversations that reach the Palm Beach County business community.</p>
               <Link href="/sponsorship" className="mt-6 inline-flex items-center rounded-full bg-[#d4b27b] px-6 py-3 text-sm font-semibold text-[#0f1b2d] transition hover:bg-[#bea568]">
                 Request Sponsorship Information
               </Link>
