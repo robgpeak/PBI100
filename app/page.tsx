@@ -19,38 +19,6 @@ const categories = [
   'Emerging Growth Businesses',
 ];
 
-const episodes = [
-  {
-    title: 'Building a Palm Beach Legacy Brand',
-    guest: 'Ava Lang',
-    role: 'Founder',
-    organization: 'Coastal Advisory Group',
-    category: 'Luxury, Hospitality & Lifestyle',
-    description:
-      'A conversation about legacy brand building, curated hospitality, and Palm Beach’s modern luxury economy.',
-    date: 'June 2026',
-  },
-  {
-    title: 'The Capital Behind Local Growth',
-    guest: 'Marcus Hale',
-    role: 'Managing Partner',
-    organization: 'Harbor Capital Partners',
-    category: 'Capital & Wealth',
-    description:
-      'Insights into private capital, family office strategies, and the next wave of Palm Beach investment.',
-    date: 'May 2026',
-  },
-  {
-    title: 'Hospitality, Culture, and the New Palm Beach Consumer',
-    guest: 'Elena Brooks',
-    role: 'CEO',
-    organization: 'Palm & Pine Hospitality',
-    category: 'Luxury, Hospitality & Lifestyle',
-    description:
-      'Exploring the intersection of hospitality, culture, and differentiated guest experiences.',
-    date: 'April 2026',
-  },
-];
 
 export default function HomePage() {
   return (
@@ -135,15 +103,12 @@ export default function HomePage() {
               <p className="mt-4 text-base leading-8 text-slate-200">
                 Conversations with the founders, operators, executives, and representatives behind the businesses shaping Palm Beach.
               </p>
-              <div className="mt-8 space-y-4">
-                {episodes.map((episode) => (
-                  <div key={episode.title} className="rounded-3xl border border-white/10 bg-slate-900/90 p-5">
-                    <p className="text-sm uppercase tracking-[0.35em] text-[#d4b27b]">{episode.category}</p>
-                    <h3 className="mt-3 text-xl font-semibold">{episode.title}</h3>
-                    <p className="mt-2 text-sm leading-6 text-slate-300">{episode.description}</p>
-                    <p className="mt-3 text-sm text-slate-400">{episode.guest}, {episode.role} at {episode.organization}</p>
-                  </div>
-                ))}
+              <div className="mt-8 rounded-3xl border border-white/10 bg-slate-900/90 p-6">
+                <p className="text-sm uppercase tracking-[0.35em] text-[#d4b27b]">Coming soon</p>
+                <p className="mt-3 text-base leading-7 text-slate-200">
+                  The first season is in production. Episodes will be published here as they
+                  release.
+                </p>
               </div>
               <Link href="/podcast" className="mt-8 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/20">
                 Visit the Podcast
@@ -172,7 +137,7 @@ export default function HomePage() {
                 Request Sponsorship Info
               </Link>
             </div>
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-10 backdrop-blur-sm">
+            <div id="subscribe" className="scroll-mt-24 rounded-[2rem] border border-white/10 bg-white/5 p-10 backdrop-blur-sm">
               <p className="text-sm uppercase tracking-[0.35em] text-[#d4b27b]">Updates</p>
               <h2 className="mt-4 text-3xl font-semibold">Subscribe for announcements</h2>
               <p className="mt-4 leading-7 text-slate-200">Receive email updates on nomination deadlines, podcast releases, annual recognition, and private events.</p>

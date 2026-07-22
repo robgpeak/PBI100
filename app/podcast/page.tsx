@@ -5,39 +5,9 @@ import PodcastGuestForm from '../../components/PodcastGuestForm';
 export const metadata = {
   title: 'Podcast | The Palm Beach Influence Podcast',
   description:
-    'Discover featured episodes from The Palm Beach Influence Podcast, where business leaders and institution representatives discuss influence, growth, and Palm Beach County strategy.',
+    'The Palm Beach Influence Podcast: conversations with the business leaders and institution representatives shaping influence, growth, and strategy across Palm Beach County. First season in production.',
 };
 
-const episodes = [
-  {
-    title: 'Building a Palm Beach Legacy Brand',
-    guest: 'Ava Lang',
-    role: 'Founder',
-    organization: 'Coastal Advisory Group',
-    category: 'Luxury, Hospitality & Lifestyle',
-    description:
-      'A look at brand strategy, hospitality experiences, and the modern Palm Beach consumer.',
-    date: 'June 2026',
-  },
-  {
-    title: 'The Capital Behind Local Growth',
-    guest: 'Marcus Hale',
-    role: 'Managing Partner',
-    organization: 'Harbor Capital Partners',
-    category: 'Capital & Wealth',
-    description: 'Private capital strategies and the financing trends influencing local expansion.',
-    date: 'May 2026',
-  },
-  {
-    title: 'Luxury, Hospitality, and the New Palm Beach Consumer',
-    guest: 'Elena Brooks',
-    role: 'CEO',
-    organization: 'Palm & Pine Hospitality',
-    category: 'Luxury, Hospitality & Lifestyle',
-    description: 'Exploring hospitality design, guest experience, and cultural influence in the market.',
-    date: 'April 2026',
-  },
-];
 
 export default function PodcastPage() {
   return (
@@ -67,47 +37,29 @@ export default function PodcastPage() {
         <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
           <div className="space-y-8">
             <div className="rounded-[2rem] border border-slate-200 bg-white/90 p-10 shadow-elegant">
-              <h2 className="text-2xl font-semibold text-[#0f1b2d]">Featured episode</h2>
+              <h2 className="text-2xl font-semibold text-[#0f1b2d]">Episodes</h2>
               <div className="mt-8 grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
                 <div className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-8">
-                  <p className="text-sm uppercase tracking-[0.35em] text-[#6d5840]">Featured</p>
-                  <h3 className="mt-4 text-2xl font-semibold text-[#0f1b2d]">Building a Palm Beach Legacy Brand</h3>
-                  <p className="mt-4 leading-7 text-slate-700">A conversation about brand strategy, hospitality, and the future of premium Palm Beach experiences.</p>
-                  <div className="mt-6 space-y-2 text-sm text-slate-600">
-                    <p>Guest: Ava Lang, Founder, Coastal Advisory Group</p>
-                    <p>Category: Luxury, Hospitality & Lifestyle</p>
-                    <p>Date: June 2026</p>
-                  </div>
-                  <button type="button" className="mt-8 inline-flex items-center rounded-full bg-[#0f1b2d] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#10203a]">
-                    Listen Now
-                  </button>
+                  <p className="text-sm uppercase tracking-[0.35em] text-[#6d5840]">Coming soon</p>
+                  <h3 className="mt-4 font-serif text-2xl font-semibold text-[#0f1b2d]">
+                    The first season is in production.
+                  </h3>
+                  <p className="mt-4 leading-7 text-slate-700">
+                    Episodes will be released here as they publish. Subscribe for updates and
+                    you will hear about the first conversation before it goes out.
+                  </p>
+                  <Link
+                    href="/#subscribe"
+                    className="mt-8 inline-flex items-center rounded-full bg-[#0f1b2d] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#10203a]"
+                  >
+                    Get Notified
+                  </Link>
                 </div>
                 <div className="rounded-[1.75rem] border border-slate-200 bg-slate-950 p-8 text-white">
                   <p className="text-sm uppercase tracking-[0.35em] text-[#d4b27b]">Podcast focus</p>
                   <p className="mt-4 leading-7 text-slate-200">The podcast highlights interviews with leaders who shape Palm Beach County business, capital, culture, and community through their organizations.</p>
                 </div>
               </div>
-            </div>
-
-            <div className="grid gap-6">
-              {episodes.map((episode) => (
-                <article key={episode.title} className="rounded-[2rem] border border-slate-200 bg-white/90 p-8 shadow-sm">
-                  <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-                    <div>
-                      <p className="text-sm uppercase tracking-[0.35em] text-[#6d5840]">{episode.category}</p>
-                      <h3 className="mt-3 text-2xl font-semibold text-[#0f1b2d]">{episode.title}</h3>
-                    </div>
-                    <p className="text-sm text-slate-500">{episode.date}</p>
-                  </div>
-                  <p className="mt-4 leading-7 text-slate-700">{episode.description}</p>
-                  <p className="mt-4 text-sm text-slate-500">
-                    Guest: {episode.guest}, {episode.role} at {episode.organization}
-                  </p>
-                  <button type="button" className="mt-6 inline-flex items-center rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-[#0f1b2d] transition hover:bg-slate-50">
-                    Listen / Watch
-                  </button>
-                </article>
-              ))}
             </div>
           </div>
 

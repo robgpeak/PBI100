@@ -37,7 +37,7 @@ export default function SponsorshipPage() {
             Sponsor the platform that highlights Palm Beach influence.
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-            Align your brand with premium content, podcast conversations, and recognition experiences for the Palm Beach business community.
+            Align your brand with premium content, podcast conversations, and recognition experiences for the Palm Beach County business community.
           </p>
         </div>
       </section>
