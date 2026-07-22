@@ -3,24 +3,24 @@ import Link from 'next/link';
 export const metadata = {
   title: 'About | Palm Beach Influence 100',
   description:
-    'Learn how Palm Beach Influence 100 recognizes the businesses and institutions shaping Palm Beach through research, editorial review, and curated recognition.',
+    'Learn how Palm Beach Influence 100 recognizes the businesses and institutions shaping Palm Beach County through research, editorial review, and curated recognition.',
 };
 
 const sections = [
   {
     title: 'Why influence matters',
     content:
-      'Influence in Palm Beach is defined by economic scale, network reach, cultural resonance, and community impact. This platform highlights businesses and institutions that move capital, shape markets, and create meaningful local change.',
+      'Influence in Palm Beach County is defined by economic scale, network reach, cultural resonance, and community impact. This platform highlights businesses and institutions that move capital, shape markets, and create meaningful local change.',
   },
   {
     title: 'Why businesses, not just individuals',
     content:
-      'The platform focuses on organizations, firms, and institutions because teams, systems, and corporate platforms are the engines that sustain long-term influence in Palm Beach.',
+      'The platform focuses on organizations, firms, and institutions because teams, systems, and corporate platforms are the engines that sustain long-term influence in Palm Beach County.',
   },
   {
     title: 'How the platform works',
     content:
-      'Each nomination and candidate is reviewed through editorial research, market signals, and the platform’s curated criteria. The process is designed to surface businesses that are both influential and relevant to Palm Beach.',
+      'Each nomination and candidate is reviewed through editorial research, market signals, and the platform’s curated criteria. The process is designed to surface businesses that are both influential and relevant to Palm Beach County.',
   },
   {
     title: 'Editorial standards',
@@ -82,7 +82,7 @@ export default function AboutPage() {
             <div className="rounded-[2rem] border border-slate-200 bg-[#0f1b2d] p-10 text-white shadow-elegant">
               <h2 className="text-2xl font-semibold">Editorial clarity</h2>
               <p className="mt-4 leading-8 text-slate-200">
-                The platform is curated, research-driven, and designed to highlight credible, business-focused influence across Palm Beach.
+                The platform is curated, research-driven, and designed to highlight credible, business-focused influence across all of Palm Beach County.
               </p>
             </div>
             <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-10">
