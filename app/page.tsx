@@ -72,7 +72,7 @@ export default function HomePage() {
               The businesses shaping Palm Beach influence.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700 sm:text-xl">
-              Palm Beach Influence 100 recognizes the companies, institutions, and business platforms driving commerce, capital, culture, philanthropy, and community across Palm Beach.
+              Palm Beach Influence 100 recognizes the companies, institutions, and business platforms driving commerce, capital, culture, philanthropy, and community across ALL of Palm Beach County.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
               <Link href="/nominate" className="inline-flex items-center justify-center rounded-full bg-[#0f1b2d] px-6 py-3 text-sm font-semibold text-white shadow-elegant transition hover:bg-[#10203a]">
@@ -103,7 +103,7 @@ export default function HomePage() {
               <p className="text-sm uppercase tracking-[0.35em] text-[#6d5840]">About the platform</p>
               <h2 className="mt-4 text-3xl font-semibold leading-tight text-[#0f1b2d]">A curated recognition platform for Palm Beach influence.</h2>
               <p className="mt-4 text-base leading-8 text-slate-700">
-                Palm Beach Influence 100 is a curated recognition and media platform focused on businesses and institutions that meaningfully influence the Palm Beach market through commerce, capital, culture, philanthropy, and community.
+                Palm Beach Influence 100 is a curated recognition and media platform focused on businesses and institutions that meaningfully influence Palm Beach County through commerce, capital, culture, philanthropy, and community.
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
